@@ -33,15 +33,17 @@
   </style>
   
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?fe4834c56ef4fce237e9d880f5962b1f";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+  
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?fe4834c56ef4fce237e9d880f5962b1f";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
 </script>
+
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 
@@ -68,7 +70,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/archives/index.html">文章目录</a></li>
 	        
 			</ul>
 		</nav>
@@ -97,7 +99,12 @@
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/dy2022" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 			</div>
+			<div style="position:absolute; bottom:120px left:auto; width:85%">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=240 height=86 src="//music.163.com/outchain/player?type=2&id=1491825646&auto=1&height=66"></iframe>
+			</div>
 		</nav>
+
+		    
 	</header>		
 </div>
 
@@ -146,7 +153,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 50%"><a href="/archives/index.html">文章目录</a></li>
 		        
 				</ul>
 			</nav>
@@ -184,12 +191,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="dos命令"><a href="#dos命令" class="headerlink" title="dos命令"></a>dos命令</h2><p>跟我一起来试试吧，打开电脑，按下win键，再按下R键，在打开内输入cmd，然后在弹出的对话框里你就可以用dos语言和计算机交互了。例如：<br>1.help #显示dos命令的帮助<br>2.dir #显示当前路径所有文件或目录的信息<br>3.ipconfig #显示当前计算机的网络配置，这个是比较常用的<br>4.cd #改变当前目录，相当于鼠标双击进入文件夹<br>5.cls #清楚交互界面的内容<br>6.exit #退出cmd程序<br>7.md #创建新的文件夹，后面加上文件夹名字</p>
-<h2 id="常用git命令"><a href="#常用git命令" class="headerlink" title="常用git命令"></a>常用git命令</h2><p>git branch 查看本地所有分支<br>git status 查看当前状态<br>git commit 提交<br>git branch -a 查看所有的分支<br>git branch -r 查看远程所有分支<br>git commit -am “init” 提交并且加注释<br>git remote add origin git<br>git push origin master 将文件给推到服务器上<br>git remote show origin 显示远程库origin里的资源<br>git push origin master:develop<br>git push origin master:hb-dev 将本地库与服务器上的库进行关联<br>git checkout –track origin/dev 切换到远程dev分支<br>git branch -D master develop 删除本地库develop<br>git checkout -b dev 建立一个新的本地分支dev<br>git merge origin/dev 将分支dev与当前分支进行合并<br>git checkout dev 切换到本地dev分支<br>git remote show 查看远程库<br>git add .<br>git rm 文件名(包括路径) 从git中删除指定文件<br>git clone git://github.com/schacon/grit.git 从服务器上将代码给拉下来<br>git config –list 看所有用户<br>git ls-files 看已经被提交的<br>git rm [file name] 删除一个文件<br>git commit -a 提交当前repos的所有的改变<br>git add [file name] 添加一个文件到git index<br>git commit -v 当你用－v参数的时候可以看commit的差异<br>git commit -m “This is the message describing the commit” 添加commit信息<br>git commit -a -a是代表add，把所有的change加到git index里然后再commit<br>git commit -a -v 一般提交命令<br>git log 看你commit的日志<br>git diff 查看尚未暂存的更新<br>git rm a.a 移除文件(从暂存区和工作区中删除)<br>git rm –cached a.a 移除文件(只从暂存区中删除)<br>git commit -m “remove” 移除文件(从Git中删除)<br>git rm -f a.a 强行移除修改后文件(从暂存区和工作区中删除)<br>git diff –cached 或 $ git diff –staged 查看尚未提交的更新<br>git stash push 将文件给push到一个临时空间中<br>git stash pop 将文件从临时空间pop下来<br>git remote add origin <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a>:username/Hello-World.git<br>git push origin master 将本地项目给提交到服务器中<br>git pull 本地与服务器端同步<br>git push (远程仓库名) (分支名) 将本地分支推送到服务器上去。<br>git push origin serverfix:awesomebranch<br>git fetch 相当于是从远程获取最新版本到本地，不会自动merge<br>git commit -a -m “log_message” (-a是提交所有改动，-m是加入log信息) 本地修改同步至服务器端 ：<br>git branch branch_0.1 master 从主分支master创建branch_0.1分支<br>git branch -m branch_0.1 branch_1.0 将branch_0.1重命名为branch_1.0<br>git checkout branch_1.0/master 切换到branch_1.0/master分支<br>du -hs<br>git branch 删除远程branch<br>git push origin :branch_remote_name<br>git branch -r -d branch_remote_name 初始化版本库，并提交到远程服务器端</p>
-<h2 id="博客创建笔记"><a href="#博客创建笔记" class="headerlink" title="博客创建笔记"></a>博客创建笔记</h2><h3 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h3><p>1.node -v    #查看node版本<br>2.npm -v    #查看npm版本</p>
-<h3 id="安装淘宝的cnpm管理器"><a href="#安装淘宝的cnpm管理器" class="headerlink" title="安装淘宝的cnpm管理器"></a>安装淘宝的cnpm管理器</h3><p>1.npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a><br>2.cnpm -v    #查看cnpm版本</p>
-<h3 id="安装hexo框架"><a href="#安装hexo框架" class="headerlink" title="安装hexo框架"></a>安装hexo框架</h3><p>1.cnpm install -g hexo-cli<br>2.hexo -v    #查看hexo版本</p>
-<h3 id="博客相关命令"><a href="#博客相关命令" class="headerlink" title="博客相关命令"></a>博客相关命令</h3><p>1.hexo init #初始化博客<br>2.hexo s    #启动本地博客服务<br>3.hexo n  #创建新的文章<br>4.hexo clean #清理<br>5.hexo g #生成<br>6.cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件<br>7.hexo d    #部署到Github仓库里<br>8.git config –global user.email “xxx”<br>  git config –global user.name “xxx” #windows部署之前要先执行此命令<br>9.git clone 主题网址.git themes/主题名称  #下载主题到本地</p>
-
+        
       
 
       
